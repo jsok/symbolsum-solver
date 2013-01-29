@@ -28,8 +28,11 @@ For the above problem, enter it as:
     operand2 = [  0,  'plus', 'star', 'circle', 'star' ]
     result  = [ 'star', 'circle', 'hexagon', 'circle', 'star' ]
 
-    # Instatiate a SymbolSumSolver and kick it off
+    # Instatiate a SymbolSumSolver
     solver = SymbolSumSolver(all_symbols)
+
+    # You can use the operator's in the standard python operator module
+    import operator
     solver.solve(operand1, operator.sub, operand2, result)
 
 ```
